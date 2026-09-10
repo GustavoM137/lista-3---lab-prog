@@ -11,7 +11,7 @@ int main() {
         if (a_a <= 0 || a_b <= 0)
             puts("Valor inválido.");
 
-    } while (a_a <= 0 || a_b < 0);
+    } while (a_a <= 0 || a_b <= 0);
 
     do {
         puts("Digite o perímetro de A e B:");
