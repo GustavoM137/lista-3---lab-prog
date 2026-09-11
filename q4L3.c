@@ -13,7 +13,7 @@ int main() {
         e = (x > (x & 0xF0)) ? x - (x & 0xF) : (x & 0xF) - x;
 
         printf("Valor original: %hhu\n", x);
-        pritnf("Valor quantizado: %hhu\n", x >> 4);
+        printf("Valor quantizado: %hhu\n", x >> 4);
         printf("Valor reconstruído: %hhu\n", x & 0xF0);
         printf("Erro de quantização: %hhu\n", e);
 
