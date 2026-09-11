@@ -35,7 +35,7 @@ int main() {
         if (dc1 < dc2)
             puts("Objeto X atribuído à classe C1");
         else if (dc2 > dc1)
-            puts("Obejto X atribuído à classe C2");
+            puts("Objeto X atribuído à classe C2");
         else
             puts("Empate na atribuição de classe.");
     }
