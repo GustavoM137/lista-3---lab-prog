@@ -1,5 +1,6 @@
 #include <math.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
     float a1, a2, a, p1, p2, p, dc1, dc2;
