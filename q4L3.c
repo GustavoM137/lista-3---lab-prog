@@ -10,7 +10,7 @@ int main() {
         puts("Digite o valor da amostra:");
         scanf("%hhu", &x);
 
-        e = (x > (x & 0xF0)) ? x - (x & 0xF) : (x & 0xF) - x;
+        e = (x > (x & 0xF0)) ? x - (x & 0xF0) : (x & 0xF0) - x;
 
         printf("Valor original: %hhu\n", x);
         printf("Valor quantizado: %hhu\n", x >> 4);
