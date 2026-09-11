@@ -1,3 +1,4 @@
+#include <math.h>
 #include <stdio.h>
 
 int main() {
@@ -31,19 +32,13 @@ int main() {
 
     } while (v_a <= 0 || v_b <= 0);
 
-    d_ab = (a_a - a_b > a_b - a_a) ? a_a - a_b : a_b - a_a;
+    d_ab = fabsf(a_a - a_b);
 
-    if (p_a - p_b > p_b - p_a)
-        d_ab = (p_a - p_b > d_ab) ? p_a - p_b : d_ab;
+    if (fabsf(p_a - p_b) > d_ab)
+        d_ab = fabsf(p_a - p_b);
 
-    else
-        d_ab = (p_b - p_a > d_ab) ? p_b - p_a : d_ab;
-
-    if (v_a - v_b > v_b - v_a)
-        d_ab = (v_a - v_b > d_ab) ? v_a - v_b : d_ab;
-
-    else
-        d_ab = (v_b - v_a > d_ab) ? v_b - v_a : d_ab;
+    if (abs(v_a - v_b) > d_ab)
+        d_ab = abs(v_a - v_b);
 
     printf("Distância de Chebyshev = %.2f\n", d_ab);
 
