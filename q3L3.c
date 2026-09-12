@@ -17,7 +17,7 @@ int main() {
         scanf("%f %f %d", &a, &p, &v);
 
         puts("Digite a classe correta (GT), 1 para C1 e 2 para C2:");
-        scanf("%d", &gt);
+        scanf("%d", &gt_correto);
 
         // Chebyshev
         dc1 = abs(v - v1);
