@@ -4,7 +4,7 @@
 
 int main() {
     float a1, a2, a, p1, p2, p, dc1, dc2, acc_c, acc_m, acc_e;
-    int v1, v2, v, acertos_c, acertos_m, acertos_e, gt_correto, gt, n = 10;
+    int v1, v2, v, acertos_c = 0, acertos_m = 0, acertos_e = 0, gt_correto, gt, n = 10;
 
     puts("Digite a área, o perímetro e o número de vértices do centróide 1:");
     scanf("%f %f %d", &a1, &p1, &v1);
